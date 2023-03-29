@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conversion Calculator</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+<!-------- Top Bar Navigator --------->
+
+<div class="topnav">
+
+    <img class="logo" src="logo.png" alt="Conversion Calculator">
+
+</div>
+
+<!-------- Weight Converter --------->
+
+<div class="weight-header">
+    <img class="weight-img" src="weight-img.png" alt="Weight Converter">
+
+    <div class="weight-val">
+        <input type="number" id="inputweight" placeholder="0" oninput="WeightConverter(this.value)" onchange="WeightConverter(this.value)" onKeyPress="if(this.value.length==7) return false;"><br>
+        </div>
+    
+        <div class="w-output">
+        <h5 class="g-output">Gram: <span id="g-output">0</span></h5>
+        <h5 class="kg-output">Kilogram: <span id="kg-output">0</span></h5>
+        <h5 class="mg-output">Milligram: <span id="mg-output">0</span></h5>
+        <h5 class="o-output">Ounce: <span id="o-output">0</span></h5>
+        </div>
+
+</div>
+
+<!-------- Length Converter --------->
+
+<div class="length-header">
+
+    <img class="length-img" src="length-img.png" alt="Length Converter">
+
+    <div class="length-val">
+    <input type="number" id="inputlength" placeholder="0" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)" onKeyPress="if(this.value.length==7) return false;"><br>
+    </div>
+
+    <div class="l-output">
+    <h5 class="km-output">Kilometer: <span id="km-output">0</span></h5>
+    <h5 class="cm-output">Centimeter: <span id="cm-output">0</span></h5>
+    <h5 class="m-output">Meter: <span id="m-output">0</span></h5>
+    <h5 class="ml-output">Millimeter: <span id="ml-output">0</span></h5>
+    </div>
+
+</div>
+
+<!-------- Time Converter --------->
+
+<div class="time-header">
+    <img class="time-img" src="time-img.png" alt="Time Converter">
+
+    <div class="time-val">
+        <input type="number" id="inputtime" placeholder="0" oninput="TimeConverter(this.value)" onchange="TimeConverter(this.value)" onKeyPress="if(this.value.length==7) return false;"><br>
+    </div>
+    
+        <div class="time-output">
+        <h5 class="hr-output">Hour: <span id="hr-output">0</span></h5>
+        <h5 class="sec-output">Second: <span id="sec-output">0</span></h5>
+        <h5 class="d-output">Day: <span id="d-output">0</span></h5>
+        <h5 class="ms-output">Millisecond: <span id="ms-output">0</span></h5>
+        </div>
+
+
+</div>
+
+<!-------- Temperature Converter --------->
+
+<div class="temp-header">
+    <img class="temp-img" src="temperature-img.png" alt="Temperature Converter">
+
+    <div class="temp-val">
+        <input type="number" id="inputtemp" placeholder="0" oninput="TempConverter(this.value)" onchange="TempConverter(this.value)" onKeyPress="if(this.value.length==7) return false;"><br>
+    </div>
+    
+        <div class="temp-output">
+        <h5 class="f-output">Fahrenheit: <span id="f-output">0°F</span></h5>
+        <h5 class="k-output">Kelvin: <span id="k-output">0K</span></h5>
+        </div>
+
+</div>
+
+    <script>
+        // Weight Conversion
+        function WeightConverter(value) {
+
+            document.getElementById('g-output').innerHTML=value*453.6
+            document.getElementById('kg-output').innerHTML=value/2.205
+            document.getElementById('mg-output').innerHTML=value*453600
+            document.getElementById('o-output').innerHTML=value*16
+        }
+
+        // Length Conversion
+        function LengthConverter(value) {
+
+            document.getElementById('km-output').innerHTML=value/3281
+            document.getElementById('cm-output').innerHTML=value*30.48
+            document.getElementById('m-output').innerHTML=value/3.281
+            document.getElementById('ml-output').innerHTML=value*304.8
+        }
+
+        // Time Conversion
+        function TimeConverter(value) {
+
+            document.getElementById('hr-output').innerHTML=value/60
+            document.getElementById('sec-output').innerHTML=value*60
+            document.getElementById('d-output').innerHTML=value/1440
+            document.getElementById('ms-output').innerHTML=value*60000
+        }
+
+        function TempConverter(value) {
+
+            document.getElementById('f-output').innerHTML=value*1.8+32
+            document.getElementById('k-output').innerHTML=value*1+272.15
+
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

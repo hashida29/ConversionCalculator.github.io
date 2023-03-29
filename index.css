@@ -1,0 +1,247 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Pandora;
+}
+
+/* -------------- Top Navigation Bar --------------- */ 
+
+.logo {
+	height: auto;
+	width: 50%;
+	padding: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.topnav {
+	height: auto;
+	max-width: 100%;
+	overflow: hidden;
+	background: black;
+	border-bottom: 5px ridge #75CC20;
+}
+
+/* -------------- Weight Converter --------------- */ 
+
+.weight-header {
+	background-color: black;
+	border: 5px ridge #75CC20;
+	float: left;
+	width: 45%;
+	margin: 2%;
+}
+
+.weight-img {
+	height: auto;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 5%;
+}
+
+.weight-val {
+	margin-left: 33.33%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.w-output {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 15%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.g-output {
+	color: #75CC20;
+	float: left;
+	width: 50%;
+}
+
+.kg-output {
+	color: #75CC20;
+	float: right;
+	width: 50%;
+}
+
+.mg-output {
+	color: #75CC20;
+	float: left;
+	width: 50%;
+}
+
+.o-output {
+	color: #75CC20;
+	float: right;
+	width: 50%;
+}
+
+/* -------------- Length Converter --------------- */ 
+
+.length-header {
+	background-color: black;
+	border: 5px ridge #75CC20;
+	float: right;
+	width: 45%;
+	margin: 2%;
+}
+
+.length-img {
+	height: auto;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 5%;
+}
+
+.length-val {
+	margin-left: 33.33%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.l-output {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 15%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.km-output {
+	color: #75CC20;
+	float: left;
+	width: 50%;
+}
+
+.cm-output {
+	color: #75CC20;
+	float: right;
+	width: 50%;
+}
+
+.m-output {
+	color: #75CC20;
+	float: left;
+	width: 50%;
+}
+
+.ml-output {
+	color: #75CC20;
+	float: right;
+	width: 50%;
+}
+
+/* -------------- Time Converter --------------- */ 
+
+.time-header {
+	background-color: black;
+	border: 5px ridge #75CC20;
+	float: right;
+	width: 45%;
+	margin: 2%;
+}
+
+.time-img {
+	height: auto;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 5%;
+}
+
+.time-val {
+	margin-left: 33.33%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.time-output {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 15%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.hr-output {
+	color: #75CC20;
+	float: left;
+	width: 50%;
+}
+
+.sec-output {
+	color: #75CC20;
+	float: right;
+	width: 50%;
+}
+
+.d-output {
+	color: #75CC20;
+	float: left;
+	width: 50%;
+}
+
+.ms-output {
+	color: #75CC20;
+	float: right;
+	width: 50%;
+}
+
+/* -------------- Temperature Converter --------------- */ 
+
+.temp-header {
+	background-color: black;
+	border: 5px ridge #75CC20;
+	float: left;
+	width: 45%;
+	margin: 2%;
+}
+
+.temp-img {
+	height: auto;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 5%;
+}
+
+.temp-val {
+	margin-left: 33.33%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.temp-output {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 15%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.f-output {
+	color: #75CC20;
+	float: left;
+	width: 50%;
+}
+
+.k-output {
+	color: #75CC20;
+	float: right;
+	width: 50%;
+	margin-bottom: 7.5%;
+}
